@@ -1,0 +1,293 @@
+body{
+    margin: 0;
+    padding-top: 120px;
+}
+
+h1{
+    font-weight: bolder;
+    font-size: 60px;
+    
+}
+
+.heading1{
+    margin-top: 150px;
+}
+
+p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    padding: 20px;
+    box-shadow: 10px 20px 20px grey;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    box-sizing: border-box;
+ }
+
+nav{
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+    padding: 20px;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav a:hover{
+    color: blue;
+}
+@media(max-width: 768px){
+    header{
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    h1{
+        font-size: 30px;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    nav{
+        gap: 15px;
+        font-size: 18px;
+        padding: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    body{
+        padding-top: 150px;
+    }
+}
+.project-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80%;
+    margin: 40px auto;
+    padding: 25px;
+
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.project-info {
+    width: 60%;
+}
+
+.project-info h2 {
+    margin-bottom: 15px;
+}
+
+.project-info p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.project-image {
+    width: 45%;
+}
+
+.project-info a{
+    font-size: 30px;
+}
+.project-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media(max-width: 768px){
+    .project-card{
+        flex-direction: column;
+        width: 90%;
+        padding: 20px;
+        box-sizing: border-box;
+        margin: 30px auto;
+    }
+
+    .project-info{
+        width: 100%;
+    }
+
+    .project-info h2{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .project-info p{
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    .project-info a{
+        font-size: 22px;
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .project-image{
+        width: 100%;
+    }
+
+    .project-image img{
+        width: 100%;
+        height: auto;
+    }
+
+    .heading1{
+        font-size: 40px;
+        text-align: center;
+    }
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #334;
+    color: white;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact h3{
+    margin: 0 0 10px;
+}
+
+/* .contact nav{
+    display: flex;
+    gap: 15px;
+}
+
+
+.contact i{
+    font-size: 24px;
+} */
+
+.contact a{
+    font-size: 24px;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+.contact i{
+    font-size: 35px;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+/* .contact-section{
+    display: flex;
+    flex-direction: column;
+} */
+
+.contact-section h4{
+    margin: 0 0 10px;
+    margin-left: 100px;
+}
+.call h4{
+    margin-left: 40px;
+}
+.follow h4{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.follow nav a{
+    margin-top: -30px;
+}
+.contact-section a{
+    margin: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.contact-section a:hover{
+    color: dodgerblue;
+}
+/* .contact-section nav{
+    display: flex;
+    gap: 15px;
+    padding: 0;
+} */
+
+.contact-section i{
+    font-size: 24px;
+}
+.contact a:hover{
+    color: dodgerblue;
+    transform: scale(1.2);
+}
+.contact i:hover{
+    color: dodgerblue;
+    transform: scale(1.2);
+}
+
+/* mobile */
+@media(max-width: 700px){
+    footer{
+        /* height: 120px; */
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    /* contact information goes vertically */
+    .contact{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+    }
+
+    /* makes each section full width */
+    .contact-section{
+        width: 100%;
+    }
+
+    /* remove old margins */
+    .contact-section h4, .call h4, .follow h4{
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    /* email can wrap instead of overflowing */
+    .contact-section a{
+        overflow-wrap: anywhere;
+    }
+
+    /* social icons */
+    .follow nav{
+        gap: 20px;
+    }
+
+    .contact i{
+        font-size: 28px;
+    }
+}

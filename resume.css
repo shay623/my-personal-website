@@ -1,0 +1,40 @@
+.resume-page{
+    text-align: center;
+    padding: 20px;
+}
+
+.resume-image{
+    width: 80%;
+    max-width: 900px;
+    height: auto;
+}
+ .button{
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    border-radius: 5px;
+ }
+
+
+
+
+
+
+@media(max-width: 600px){
+    .resume-page{
+        padding: 10px;
+    }
+
+    .resume-image{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .button{
+        display: inline-block;
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
